@@ -28,10 +28,27 @@ main {
 section {
   font-size: 1em;
   background: #888;
-  width: 22%;
   margin: 1em 1% 1em 1%;
-  display: inline-block;
 }
 section:hover {
   background: #666;
 }
+
+@media screen and (min-width: 500px) {
+section {
+  display: inline-block; 
+  width: 45%;
+}
+}
+/* END FIRST BREAKPOINT */
+
+/* SECOND BREAKPOINT (DESKTOP SIZE) */
+@media screen and (min-width: 1000px) {
+	body {
+	background: blue;
+}
+	section {
+	width: 22%;
+}
+}
+/* END SECOND BREAKPOINT */
